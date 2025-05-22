@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const Casilla = () => {
     const [tarea, setTarea] = useState("");
     const [lista, setLista] = useState([]);
-    const [text,setText] = useState("No hay tareas, añadir tareas")
+
 
    
 
@@ -27,7 +27,7 @@ export const Casilla = () => {
                     className="form-label fw-bold"
                     style={{ fontSize: "2.5rem" }}
                 >
-                    Lista
+                    Lista de tareas
                 </label>
                 <input
                     placeholder="Escribe tu tarea aqui"
