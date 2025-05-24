@@ -46,8 +46,8 @@ export const Casilla = () => {
                         {item}
                         <button
                             type="button"
-                            className="btn btn-danger btn-sm eliminar-btn"
-                            style={{ display: "none" }}
+                            className="btn btn-danger btn-sm"
+                    
                             onClick={() => handleDelete(idx)}
                         >
                             <i className="fa-solid fa-x"></i>

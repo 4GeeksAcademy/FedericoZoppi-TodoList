@@ -6,10 +6,10 @@ label {
     display: block;
 }
 
-.tarea-item:hover .eliminar-btn {
-    display: inline-block !important;
+.tarea-item:hover > button {
+    visibility: visible;
 }
 
-.list-group-item {
-    position: relative;
+.tarea-item > button {
+    visibility: hidden;
 }
