@@ -5,7 +5,6 @@ export const Casilla = () => {
     const [lista, setLista] = useState([]);
 
 
-   
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -53,14 +52,22 @@ export const Casilla = () => {
                         >
                             <i className="fa-solid fa-x"></i>
                         </button>
+
                     </li>
+                    
+
                 ))}
+                <li className=" list-group-item d-flex justify-content-end align-items-center tarea-item">
+                    {lista.length === 0
+                    ? "No hay tareas, añadir tareas"
+                    : `Tareas pendientes: ${lista.length}`}
+                </li>
             </ul>
-            <div className="mt-3 text-center text-secondary">
-    {lista.length === 0
-        ? "No hay tareas, añadir tareas"
-        : `Tareas pendientes: ${lista.length}`}
-</div>
+            {/* <div className="mt-3 text-center text-secondary">
+                {lista.length === 0
+                    ? "No hay tareas, añadir tareas"
+                    : `Tareas pendientes: ${lista.length}`}
+            </div> */}
 
         </form>
     );
